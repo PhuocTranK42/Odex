@@ -33,7 +33,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="text-center">
-                                <h2 class="banner__content">Máy tính xách tay</h2>
+                                <h2 class="banner__content">${category.name}</h2>
                                 <div class="banner__menu">
                                     <ul class="breadcrumb">
                                         <li class="breadcrumb-item">
@@ -48,7 +48,7 @@
                                         </li>
                                         <li class="breadcrumb-item active">
                                             <a href="#">
-                                                Máy tính xách tay
+                                                ${category.name}
                                             </a>
                                         </li>
                                     </ul>

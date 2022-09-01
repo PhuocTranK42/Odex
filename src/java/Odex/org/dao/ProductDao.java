@@ -20,5 +20,6 @@ public interface ProductDao {
     public Product find(int id);
     public Product findByName(String name);
     public List<Product> findByCategoryId(int categoryId);
+    public int countProduct();
     public List<Product> searchByName(String productName);
 }

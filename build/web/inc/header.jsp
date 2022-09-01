@@ -42,7 +42,7 @@
             </form>
         </div>
     </nav>
-    <div class="general_head_right justify-content-center">
+    <div class="general_head_right justify-content-center" style="margin-top: -5rem;">
         <ul>
             <li>
                 <c:if test="${sessionScope.user == null}">
@@ -88,7 +88,7 @@
                 <c:forEach items="${cart}" var="orderDetailSession">
                     <div class="cart_selected_single">
                         <div class="cart_selected_single_thumb">
-                            <a href="#"><img src="./public/images/homepage/1 (1).png" class="img-fluid" alt="" /></a>
+                            <a href="#"><img src="./public/images/homepage/1 (1).png" alt="" /></a>
                         </div>
                         <div class="cart_selected_single_caption">
                             <h4 class="product_title">${orderDetailSession.productName}</h4>

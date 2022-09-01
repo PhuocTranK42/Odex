@@ -19,4 +19,13 @@ public interface OrderDao {
     public List<Order> all();
     public Order find(int id);
     public Order findByCode(String code);
+    
+    public int countOrder();
+    public int countPendingOrder();
+    public int countShippingOrder();
+    public int countDeliveredOrder();
+    public int countCanceledOrder();
+    public List<Integer> countOrderEachDay();
+    
+    public int countOrderByDay(String date);
 }

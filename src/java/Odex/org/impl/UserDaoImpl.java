@@ -138,4 +138,19 @@ public class UserDaoImpl implements UserDao {
         return null;
     }
     
+    @Override
+    public int countUser() {
+        String sql = "SELECT COUNT(*) AS count FROM users";
+        try {
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                int countUser = rs.getInt("count");
+                return countUser;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return 0;
+    }
 }

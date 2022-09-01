@@ -173,6 +173,22 @@ public class ProductDaoImpl implements ProductDao {
     }
     
     @Override
+    public int countProduct() {
+        String sql = "SELECT COUNT(*) AS count FROM products";
+        try {
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                int countProduct = rs.getInt("count");
+                return countProduct;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(ProductDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return 0;
+    }
+    
+    @Override
     public List<Product> searchByName(String productName) {
         List<Product> productList = new ArrayList<Product>();
         String sql = "SELECT * FROM PRODUCTS WHERE NAME like ?";

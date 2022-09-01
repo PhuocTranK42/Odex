@@ -4,8 +4,10 @@
  */
 package Odex.org;
 
+import Odex.org.dao.CategoryDao;
 import Odex.org.dao.DatabaseDao;
 import Odex.org.dao.ProductDao;
+import Odex.org.model.Category;
 import Odex.org.model.Product;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -37,7 +39,11 @@ public class CategoryServlet extends BaseServlet {
         ProductDao productDao = DatabaseDao.getInstance().getProductDao();
         List<Product> productList = productDao.findByCategoryId(id);
         
+        CategoryDao categorydao = DatabaseDao.getInstance().getCategoryDao();
+        Category category = categorydao.find(id);
+        
         request.setAttribute("productList", productList);
+        request.setAttribute("category", category);
         request.getRequestDispatcher("category.jsp").forward(request, response);
     }
 

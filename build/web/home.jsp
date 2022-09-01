@@ -14,12 +14,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
               integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
                 integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./public/css/style.css">
         <link rel="stylesheet" href="./public/css/homepage.css">
@@ -101,7 +104,7 @@
 
                                         <h6>
                                             ${product.price}
-                                            <span class="less_price">$112.10</span>
+                                            <span class="less_price">1120000.00</span>
                                         </h6>
                                     </div>
                                     <div class="about__item-content">
@@ -145,61 +148,61 @@
                 </div>
             </div>
             <div class="row">
-                <c:forEach items="${productList}" var="product">
-                    <div class="col-lg-3 col-md-3 col-sm-6">
-                        <div class="item">
-                            <div class="woo_product_grid">
-                                <span class="woo_pr_tag hot">Hot</span>
-                                <div class="woo_product_thumb">
-                                    <img src="${product.img}" class="img-fluid" alt="">
-                                </div>
-                                <div class="woo_product_caption.center products_center">
-                                    <div class="woo_rate">
-                                        <i class="fa fa-star filled"></i>
-                                        <i class="fa fa-star filled"></i>
-                                        <i class="fa fa-star filled"></i>
-                                        <i class="fa fa-star filled"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <div class="woo_title">
-                                        <h4 class="woo_pro_title">
-                                            <a href="ProductDetailServlet?id=${product.name}">${product.name}</a>
-                                        </h4>
-                                    </div>
-                                    <div class="woo_price products_center">
-
-                                        <h6>
-                                            ${product.price}
-                                            <span class="less_price">$112.10</span>
-                                        </h6>
-                                    </div>
-                                    <div class="about__item-content">
-                                        <ul>
-                                            <li>
-                                                <a href="CartServlet" class="woo_cart_btn btn_cart">
-                                                    <i class="fa fa-eye"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="woo_cart_btn btn_view"
-                                                   style="background: #ffd8d0; color: #ff765a;">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="woo_cart_btn btn_save"
-                                                   style="background: #c4ecff; color: #03A9F5;">
-                                                    <i class="fa fa-heart"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+            <c:forEach items="${productList}" var="product">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="item">
+                        <div class="woo_product_grid">
+                            <span class="woo_pr_tag hot">Hot</span>
+                            <div class="woo_product_thumb">
+                                <img src="${product.img}" class="img-fluid" alt="">
                             </div>
-                        </div>
-                    </div>
-                </c:forEach>
-            </div>-->
+                            <div class="woo_product_caption.center products_center">
+                                <div class="woo_rate">
+                                    <i class="fa fa-star filled"></i>
+                                    <i class="fa fa-star filled"></i>
+                                    <i class="fa fa-star filled"></i>
+                                    <i class="fa fa-star filled"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="woo_title">
+                                    <h4 class="woo_pro_title">
+                                        <a href="ProductDetailServlet?id=${product.name}">${product.name}</a>
+                                    </h4>
+                                </div>
+                                <div class="woo_price products_center">
+
+                                    <h6>
+                ${product.price}
+                <span class="less_price">$112.10</span>
+            </h6>
+        </div>
+        <div class="about__item-content">
+            <ul>
+                <li>
+                    <a href="CartServlet" class="woo_cart_btn btn_cart">
+                        <i class="fa fa-eye"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="woo_cart_btn btn_view"
+                       style="background: #ffd8d0; color: #ff765a;">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="woo_cart_btn btn_save"
+                       style="background: #c4ecff; color: #03A9F5;">
+                        <i class="fa fa-heart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+            </c:forEach>
+        </div>-->
             <!-- Ưu đãi và ưu đãi hấp dẫn -->
             <!--<div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">

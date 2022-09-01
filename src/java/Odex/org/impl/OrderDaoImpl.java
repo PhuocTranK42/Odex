@@ -131,4 +131,117 @@ public class OrderDaoImpl implements OrderDao {
         return null;
     }
     
+    @Override
+    public int countOrder() {
+        String sql = "SELECT COUNT(*) AS count FROM orders";
+        try {
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                int countOrder = rs.getInt("count");
+                return countOrder;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return 0;
+    }
+    
+    @Override
+    public int countPendingOrder() {
+        String sql = "SELECT COUNT(*) AS count FROM orders WHERE STATUS = 'PENDING'";
+        try {
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                int countPendingOrder = rs.getInt("count");
+                return countPendingOrder;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return 0;
+    }
+
+    @Override
+    public int countShippingOrder() {
+        String sql = "SELECT COUNT(*) AS count FROM orders WHERE STATUS = 'SHIPPING'";
+        try {
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                int countShippingOrder = rs.getInt("count");
+                return countShippingOrder;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return 0;
+    }
+
+    @Override
+    public int countDeliveredOrder() {
+        String sql = "SELECT COUNT(*) AS count FROM orders WHERE STATUS = 'DELIVERED'";
+        try {
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                int countDeliveredOrder = rs.getInt("count");
+                return countDeliveredOrder;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return 0;
+    }
+
+    @Override
+    public int countCanceledOrder() {
+        String sql = "SELECT COUNT(*) AS count FROM orders WHERE STATUS = 'CANCELED'";
+        try {
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                int countDeliveredOrder = rs.getInt("count");
+                return countDeliveredOrder;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return 0;
+    }
+
+    @Override
+    public List<Integer> countOrderEachDay() {
+        List<Integer> count = new ArrayList<Integer>();
+        String sql = "SELECT COUNT(*) AS count FROM `orders` where created_at > current_date - interval 7 day GROUP BY DATE(`created_at`)";
+        try {
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                count.add(rs.getInt("count"));
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return count;
+    }
+
+    @Override
+    public int countOrderByDay(String date) {
+        int count = 0;
+       String sql = "SELECT COUNT(*) AS count FROM orders where created_at=?"; 
+       try {
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setString(1, date);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                count = rs.getInt("count");
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UserDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return count;
+    }
+    
 }
