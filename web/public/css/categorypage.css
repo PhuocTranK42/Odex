@@ -1,0 +1,322 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Aug 4, 2022, 3:09:43 PM
+    Author     : Admin
+*/
+.inner_widget_link {
+    padding-left: 10px;
+}
+
+.side-list ul {
+    margin: 0;
+    padding: 0;
+}
+
+.checkbox-custom, .checkbox-custom-label{
+    display: inline-block;
+    vertical-align: text-top;
+    margin: 5px 0;
+    color: #5b687b;
+}
+
+.checkbox-custom{
+    opacity: 0;
+    position: absolute;
+}
+
+.banner {
+    padding: 2rem 0;
+    background: #1d2738;
+    color: #7f8fa9;
+}
+
+.banner__content {
+    color: #f96825;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.breadcrumb-item a {
+    float: left;
+    justify-content: center;
+    background-color: none;
+    color: #7f8fa9 !important;
+}
+
+.breadcrumb {
+    background-color: #1d2738 !important;
+    justify-content: center !important;
+}
+
+.breadcrumb-item.active a {
+    color: #ffffff !important;
+}
+
+.section {
+    padding: 80px 0 80px;
+    position: relative;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+
+.rounded {
+    border-radius: 0.25rem !important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.toolbar.toolbar-products {
+    display: flow-root;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.toolbar-sorter.sorter {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.toolbar-sorter.sorter label {
+    margin: 0;
+    margin-right: 10px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.toolbar select {
+    border: 1px solid #ebedf1;
+    background: #ffffff;
+    height: 38px;
+    color: #647b9c;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 0 10px;
+    padding-right: 30px;
+    line-height: 31px;
+}
+
+.action.sorter-action {
+    margin-left: 4px;
+}
+
+.model {
+    float: right;
+    margin-left: 20px;
+    margin-top: 6px;
+    margin-right: 6px;
+}
+
+.field.limiter {
+    float: right;
+}
+
+.field.limiter .label {
+    display: inline-block;
+}
+
+.label {
+    padding: 3px 15px;
+    color: #ffffff;
+    font-weight: 400;
+    border-radius: 4px;
+    font-size: 75%;
+    font-size: 15px;
+    color: #647b9c;
+}
+
+.control {
+    display: inline-block;
+}
+
+.item .woo_product_grid {
+    margin: 0;
+}
+
+.item:hover .about__item-content {
+    opacity: 0.8;
+    visibility: visible;
+}
+
+.about__item-content {
+    background-color: #162b65;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Độ mờ */
+    visibility: hidden;
+    transition: all none 0.4s;
+
+}
+
+.bg {
+    background: #f4f5f7;
+}
+
+.about__item-content ul li .woo_cart_btn.btn_cart {
+    background: #ddf9c7;
+    color: #5dbf13;
+}
+
+.about__item-content ul li .woo_cart_btn {
+    width: 42px;
+    height: 40px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: #f4f5f7;
+
+}
+
+
+.about__item-content ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.about__item-content ul li {
+    display: inline-block;
+    padding: 0 2px;
+    list-style: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.woo_product_caption.center,
+.products_center {
+    text-align: center;
+    width: 100%;
+}
+
+.woo_title .woo_pro_title {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    font-family: 'Muli', sans-serif;
+}
+
+.woo_price h6 span {
+    margin-left: 1rem;
+    font-size: 14px;
+    font-weight: 400;
+    color: #74869c;
+    text-decoration: line-through;
+}
+
+.woo_price {
+    justify-content: center;
+}
+
+.woo_price {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.woo_title .woo_pro_title a {
+    color: #2D3954;
+}
+
+.woo_product_grid {
+    margin: 0;
+}
+
+.woo_product_grid {
+    position: relative;
+    width: 100%;
+    display: block;
+    background: #ffffff;
+    border: 1px solid #e4e7ec;
+    border-radius: 0.4rem;
+    margin-bottom: 30px;
+    padding: 1rem 1.5rem;
+    transition: all ease 0.4s;
+}
+
+.woo_pr_tag.hot {
+    background: #ff5722;
+}
+
+.woo_pr_tag {
+    position: absolute;
+    font-size: 13px;
+    color: #ffffff;
+    padding: 3px 10px;
+    border-radius: 3px;
+    background: #FF9800;
+}
+
+.woo_rate {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.woo_rate i.filled {
+    color: #ff9c07;
+}
+
+.woo_rate i {
+    font-size: 10px;
+    margin-right: 2px;
+    color: #ced4ec;
+}
+
+.pagination {
+    display: block;
+    padding-left: 0;
+    border-radius: 4px;
+    margin: 20px auto 0 !important;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.pagination .page-item.left {
+    float: left !important;
+}
+
+.pagination .page-item.right {
+    float: right;
+}
+
+.pagination>li {
+    display: inline-block;
+}
+
+.pagination .page-item.left .page-link,
+.pagination .page-item.right .page-link {
+    width: auto;
+    height: 42px;
+    border-radius: 50px !important;
+    padding: 0 22px !important;
+    display: flex;
+    align-items: center;
+}
+

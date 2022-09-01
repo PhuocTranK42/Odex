@@ -1,0 +1,170 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Aug 5, 2022, 6:18:57 PM
+    Author     : Admin
+*/
+.text-center {
+    text-align: center !important;
+}
+
+.banner {
+    padding: 2rem 0;
+    background: #1d2738;
+    color: #7f8fa9;
+}
+
+.banner__content {
+    color: #f96825;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.breadcrumb-item a {
+    float: left;
+    justify-content: center;
+    background-color: none;
+    color: #7f8fa9 !important;
+}
+
+.breadcrumb {
+    background-color: #1d2738 !important;
+    justify-content: center !important;
+}
+
+.breadcrumb-item.active a {
+    color: #ffffff !important;
+}
+
+.section {
+    padding: 80px 0 80px;
+    position: relative;
+}
+
+.total_product .tbl_remove {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+    background: #edf1f9;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.total_product {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.form-control.tbl_quan {
+    max-width: 85px;
+    height: 45px;
+    background: #f4f5f7;
+    font-weight: 600;
+}
+
+.total_product .tbl_total_price {
+    margin: 0;
+    font-weight: 400;
+    margin-right: 15px;
+}
+
+.product_item_img {
+    margin-right: 15px;
+    max-width: 70px;
+}
+
+.product_title {
+    position: relative;
+    text-align: left;
+    display: inline-block;
+}
+
+.tbl_pr_title {
+    margin-bottom: 2px;
+    font-size: 17px;
+}
+
+.tbl_pr_quality {
+    font-size: 13px;
+    color: #647b9c;
+    font-weight: 400;
+}
+
+.form-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.form-control {
+    height: 54px;
+    border-radius: 4px;
+    font-size: 15px;
+    box-shadow: none;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #e6eaf3;
+    background-clip: initial;
+}
+
+.btn-outline-dark {
+    color: #1f2738;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid #1f2738;
+}
+
+.list-group-flush-x .list-group-item {
+    padding-left: 0;
+    padding-right: 0;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+}
+
+.list-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.cart_detail_box {
+    background: #f4f5f7;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.cart_detail_box .card-body {
+    border: none;
+    border-bottom: 0;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #1f2738;
+    border-color: #1f2738;
+}
+
+.btn {
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: 0s;
+    border-radius: 4px;
+}
+
+

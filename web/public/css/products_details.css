@@ -1,0 +1,492 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Aug 4, 2022, 6:24:13 PM
+    Author     : Admin
+*/
+.banner {
+    padding: 2rem 0;
+    background: #1d2738;
+    color: #7f8fa9;
+}
+
+.banner__content {
+    color: #f96825;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.breadcrumb-item a {
+    float: left;
+    justify-content: center;
+    background-color: none;
+    color: #7f8fa9 !important;
+}
+
+.breadcrumb {
+    background-color: #1d2738 !important;
+    justify-content: center !important;
+}
+
+.breadcrumb-item.active a {
+    color: #ffffff !important;
+}
+
+.section {
+    padding: 80px 0 80px;
+    position: relative;
+}
+
+
+.sp-current {
+    opacity: 1 !important;
+    position: relative;
+}
+
+.sp-current img {
+    width: 100%
+}
+
+.sp-thumbs a {
+    display: inline-flex;
+    background-size: cover;
+    background-position: center;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    transition: all .2s ease-out;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border: 1px solid #eceef5;
+    margin: 2px;
+    border-radius: 4px;
+}
+
+.sp-wrap {
+    line-height: 0;
+    font-size: 0;
+    position: relative;
+    width: 100%;
+}
+
+.sp-large {
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.sp-thumbs {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.woo_cats_wrps {
+    position: relative;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.woo_cats_wrps .woo_pr_cats {
+    font-size: 14px;
+    font-weight: 600;
+    flex: 1;
+}
+
+.woo_pr_trending {
+    position: relative;
+    float: right;
+    font-size: 13px;
+    padding: 4px 15px;
+    border-radius: 2px;
+    background: #2dab32;
+    color: #ffffff;
+}
+
+.woo_pr_title {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.woo_pr_reviews {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.woo_pr_rating i.filled {
+    color: #FF9800;
+}
+
+.woo_pr_rating i {
+    margin-right: 1px;
+    font-size: 10px;
+}
+
+.woo_pr_total_reviews a {
+    font-weight: 600;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.woo_pr_short_desc {
+    margin-bottom: 1.5rem;
+}
+
+.woo_pr_price {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.woo_pr_offer_price {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.woo_pr_offer_price h3 {
+    font-size: 40px;
+}
+
+span.org_price {
+    flex: 1;
+    margin-left: 1.5rem;
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: line-through;
+    color: #afb8d0;
+}
+
+.woo_off_text {
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f13434;
+    text-align: center;
+}
+
+.woo_off_text h4 {
+    line-height: 1.2;
+    color: #ffffff;
+    margin: 0;
+}
+
+.pr_info_prefix.grocery_style .sku_preflix_first {
+    min-width: 110px;
+}
+
+.woo_off_text span {
+    display: block;
+    font-size: 16px;
+}
+
+.pr_info_prefix.grocery_style {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cart_sku_preflix {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 350px;
+    padding: 5px 0;
+}
+
+.pr_info_prefix .grocery_style .sku_preflix_first {
+    min-width: 110px;
+}
+
+.pr_info_prefix.grocery_style .sku_preflix_first strong {
+    color: #92a6bd;
+    font-weight: 400;
+}
+
+.pr_info_prefix.grocery_style .sku_preflix_last {
+    color: #2b364e;
+}
+
+.sku_preflix_last {
+    text-align: left;
+    font-size: 14px;
+    flex: 1;
+}
+
+.woo_btn_action {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.form-control.qua_pr {
+    height: 54px;
+}
+
+.form-control {
+    border-radius: 4px;
+    font-size: 15px;
+    box-shadow: none;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #e6eaf3;
+    background-clip: initial;
+}
+
+.woo_btn_action .btn {
+    height: 55px;
+    margin: 0;
+    font-weight: 600;
+    padding: 0 32px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: all ease 0.4s;
+    background: #1f2738;
+    border-color: #1f2738;
+    border-radius: 4px;
+}
+
+.btn-dark {
+    color: #fff;
+}
+
+.woo_btn_action .btn.btn-gray {
+    background: #dfe5ec;
+    border-color: #dfe5ec;
+    color: #243444;
+}
+
+.gray {
+    background: #f4f5f7;
+}
+
+.section {
+    padding: 80px 0 80px; 
+    position: relative;
+}
+
+.owl-carousel,
+.owl-carousel.owl-loaded {
+    display: block;
+}
+
+.owl-carousel {
+    width: 100%;
+    z-index: 1;
+}
+
+.owl-carousel,
+.owl-carousel .owl-item {
+    position: relative;
+}
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+}
+
+.owl-carousel .owl-stage {
+    position: relative;
+}
+
+.owl-carousel .item {
+    padding: 0 5px;
+}
+
+.owl-carousel .item .woo_product_grid {
+    margin: 0;
+}
+
+.woo_product_grid {
+    position: relative;
+    width: 100%;
+    display: block;
+    background: #ffffff;
+    border: 1px solid #e4e7ec;
+    border-radius: 0.4rem;
+    padding: 1rem 1.5rem;
+    transition: all ease 0.4s;
+}
+
+.woo_pr_tag.hot {
+    background: #ff5722;
+}
+
+.woo_pr_tag {
+    position: absolute;
+    font-size: 13px;
+    color: #ffffff;
+    padding: 3px 10px;
+    border-radius: 3px;
+    background: #FF9800;
+}
+
+.woo_product_thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex: 1; */
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+}
+
+.woo_product_caption.center {
+    text-align: center;
+    width: 100%;
+}
+
+.woo_rate {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.woo_rate i.filled {
+    color: #ff9c07;
+}
+
+.woo_rate i {
+    font-size: 10px;
+    margin-right: 2px;
+    color: #ced4ec;
+}
+
+.woo_title .woo_pro_title a {
+    color: #2D3954;
+}
+
+.woo_title .woo_pro_title {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    font-family: 'Muli', sans-serif;
+}
+
+.woo_product_caption.center .woo_price {
+    justify-content: center;
+}
+
+.woo_price {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.woo_price h6 {
+    font-size: 20px;
+    color: #1ca301;
+    margin-bottom: 0;
+}
+
+.woo_price h6 span {
+    margin-left: 1rem;
+    font-size: 14px;
+    font-weight: 400;
+    color: #74869c;
+    text-decoration: line-through;
+}
+
+.btn {
+    padding: 10px 35px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-size: 17px;
+    /* cursor: pointer; */
+    height: 62px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn--primary {
+    background-color: #ff817e;
+}
+
+.sp-large:hover {
+    max-width: 100%;
+}
+
+.item:hover .about__item-content {
+    opacity: 0.8;
+    visibility: visible;
+}
+
+.about__item-content {
+    background-color: #162b65;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #5dbf13;
+    font-family: var(--secondary-font);
+    /* Độ mờ */
+    opacity: 2;
+    visibility: hidden;
+    transition: opacity 0.4s linear
+        /*linear Thuật toán */
+        , visibility 0.4s linear;
+    /* Tốc độ đẩy ra độ mờ */
+    transition: all ease 0.4s;
+    
+}
+
+.about__item-content ul li .woo_cart_btn.btn_cart {
+    background: #ddf9c7;
+    color: #5dbf13;
+}
+.about__item-content ul li .woo_cart_btn {
+    width: 42px;
+    height: 40px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: #f4f5f7;
+    
+}
+
+
+.about__item-content ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.about__item-content ul li {
+    display: inline-block;
+    padding: 0 2px;
+    list-style: none;
+}
+
+.product_meta > span {
+    display: block;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+
