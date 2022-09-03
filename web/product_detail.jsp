@@ -155,10 +155,10 @@
                         <div class="custom-tab style-1">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true" aria-expanded="true">Description</a>
+                                    <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true" aria-expanded="true">Mô tả</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="information-tab" data-toggle="tab" href="#information" role="tab" aria-controls="information" aria-selected="false" aria-expanded="false">Additional Information</a>
+                                    <a class="nav-link" id="information-tab" data-toggle="tab" href="#information" role="tab" aria-controls="information" aria-selected="false" aria-expanded="false">Thông số kỹ thuật</a>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent" style="margin-top: 1rem;">
