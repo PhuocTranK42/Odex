@@ -27,12 +27,13 @@ public class OrderDaoImpl implements OrderDao {
     
     @Override
     public boolean insert(Order order) {
-        String sql = "INSERT INTO orders VALUES(NULL, ?, ?, ?)";
+        String sql = "INSERT INTO orders VALUES(NULL, ?, ?, ?, ?)";
         try {
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, order.getCode());
             stmt.setString(2, order.getStatus());
             stmt.setInt(3, order.getUserId());
+            stmt.setString(4, order.getCurrentDateTime());
             stmt.execute();
         } catch (SQLException ex) {
             Logger.getLogger(OrderDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
@@ -43,11 +44,13 @@ public class OrderDaoImpl implements OrderDao {
 
     @Override
     public boolean update(Order order) {
-        String sql = "UPDATE orders SET code=?, status=?";
+        String sql = "UPDATE orders SET code=?, status=?, userId=? where id=?";
         try {
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, order.getCode());
             stmt.setString(2, order.getStatus());
+            stmt.setInt(3, order.getUserId());
+            stmt.setInt(4, order.getId());
             stmt.execute();
         } catch (SQLException ex) {
             Logger.getLogger(OrderDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
@@ -82,8 +85,9 @@ public class OrderDaoImpl implements OrderDao {
                 String code = rs.getString("code");
                 String status = rs.getString("status");
                 int userId = rs.getInt("userId");
+                String createdAt = rs.getString("created_at");
                 
-                orderList.add(new Order(id, code, status, userId));
+                orderList.add(new Order(id, code, status, userId, createdAt));
             }
         } catch (SQLException ex) {
             Logger.getLogger(OrderDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
@@ -102,8 +106,9 @@ public class OrderDaoImpl implements OrderDao {
                 String code = rs.getString("code");
                 String status = rs.getString("status");
                 int userId = rs.getInt("userId");
+                String createdAt = rs.getString("created_at");
                 
-                return new Order(id, code, status, userId);
+                return new Order(id, code, status, userId, createdAt);
             }
         } catch (SQLException ex) {
             Logger.getLogger(OrderDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
@@ -122,14 +127,37 @@ public class OrderDaoImpl implements OrderDao {
                 int id = rs.getInt("id");
                 String status = rs.getString("status");
                 int userId = rs.getInt("userId");
+                String createdAt = rs.getString("created_at");
                 
-                return new Order(id, code, status, userId);
+                return new Order(id, code, status, userId, createdAt);
             }
         } catch (SQLException ex) {
             Logger.getLogger(OrderDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
         }
         return null;
     }
+    
+    @Override
+    public List<Order> findByStatus(String status) {
+        List<Order> orderList = new ArrayList<Order>();
+        String sql = "SELECT * FROM ORDERs WHERE STATUS=?";
+        try {
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setString(1, status);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String code = rs.getString("code");
+                int userId = rs.getInt("userId");
+                String createdAt = rs.getString("created_at");
+                orderList.add(new Order(id, code, status, userId, createdAt));
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(OrderDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return orderList;
+    }
+
     
     @Override
     public int countOrder() {

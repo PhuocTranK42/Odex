@@ -138,7 +138,7 @@
                         </div>
                         <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                             <!-- comment -->
-                            <a class="btn btn-block btn-dark mb-2" href="checkout.jsp">Tiến hành thanh toán</a>
+                            <a class="btn btn-block btn-dark mb-2" href="CheckoutServlet">Tiến hành thanh toán</a>
                         </div>
                     </div>
                 </div>

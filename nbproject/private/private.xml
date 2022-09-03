@@ -3,11 +3,23 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/admin/DashboardServlet.java</file>
-            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/LoginServlet.java</file>
-            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/cart.jsp</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/product_detail.jsp</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/model/Order.java</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/loginpage.jsp</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/public/css/categorypage.css</file>
             <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/checkout.jsp</file>
-            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/admin/AdminServlet.java</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/admin/order/EditOrderServlet.java</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/registerpage.jsp</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/admin/order/IndexOrderServlet.java</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/public/css/style.css</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/cart.jsp</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/inc/header.jsp</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/CheckoutServlet.java</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/dao/OrderDao.java</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/impl/OrderDaoImpl.java</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/home.jsp</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/impl/UserDaoImpl.java</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/category.jsp</file>
         </group>
     </open-files>
 </project-private>

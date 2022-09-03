@@ -6,6 +6,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Created on : Aug 4, 2022, 6:24:13 PM
     Author     : Admin
 */
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9 !important;
+    border-color: none !important;
+}
+
+.btn-primary {
+    background-color: #FF9800!important;
+}
+
 .banner {
     padding: 2rem 0;
     background: #1d2738;

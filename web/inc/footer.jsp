@@ -17,7 +17,7 @@
                     <div class="newsletter_box">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Subscribe here...">
-                            <button class="btn search_btn" type="button">
+                            <button class="btn search_btn" type="button" style="height: 54px">
                                 <i class="fa fa-arrow-right"></i>
                             </button>
                         </div>

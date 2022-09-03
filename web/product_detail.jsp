@@ -45,7 +45,7 @@
                                                 <i class="fa fa-home"></i>
                                             </a>
                                         </li>
-                                         <li class="breadcrumb-item">
+                                        <li class="breadcrumb-item">
                                             <a href="#">
                                                 ${category.name}
                                             </a>
@@ -78,28 +78,28 @@
                                             <img src="${product.img}" class="sp-current-big" alt="">
                                         </a>
                                     </div>
-                                    <div class="sp-thumbs sp-tb-active">
+                                    <!--<div class="sp-thumbs sp-tb-active">
                                         <a href="#" class="sp-current">
                                             <img src="${product.img}">
                                         </a>
-                                        <a href="#" style="background-image:url(./public/image/3.png);">
+                                        <a href="#" style="background-image:url(./public/images/homepage/msi-modern-15-a5m-r5-236vn-2.jpg);">
                                         </a>
-                                        <a href="#" style="background-image:url(./public/image/4.png);">
+                                        <a href="#" style="background-image:url(./public/images/homepage/msi-modern-15-a5m-r5-236vn-2.jpg);">
                                         </a>
-                                        <a href="#" style="background-image:url(./public/image/5.png);">
+                                        <a href="#" style="background-image:url(./public/images/homepage/msi-modern-15-a5m-r5-236vn-2.jpg);">
                                         </a>
-                                        <a href="#" style="background-image:url(./public/image/6.png);">
+                                        <a href="#" style="background-image:url(./public/images/homepage/msi-modern-15-a5m-r5-236vn-2.jpg);">
                                         </a>
-                                        <a href="#" style="background-image:url(./public/image/7.png);">
+                                        <a href="#" style="background-image:url(./public/images/homepage/msi-modern-15-a5m-r5-236vn-2.jpg);">
                                         </a>
-                                    </div>
+                                    </div>-->
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12">
                                 <div class="woo_pr_detail">
                                     <div class="woo_cats_wrps">
                                         <a href="#" class="woo_pr_cats">
-                                             ${category.name}
+                                            ${category.name}
                                         </a>
                                         <span class="woo_pr_trending">Trending</span>
                                     </div>
@@ -133,17 +133,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="pr_info_prefix grocery_style mb-3">
-                                        <!-- First -->
-                                        <div class="cart_sku_preflix">
-                                            <div class="sku_preflix_first">
-                                                <strong>SKU:</strong>
-                                            </div>
-                                            <div class="sku_preflix_last">
-                                                HSQ4768987
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="woo_btn_action">
                                         <div class="col-12 col-lg-auto">
                                             <input name ="quantity" type="number" class="form-control qua_pr mb-2" value="1">
@@ -153,34 +142,44 @@
                                                 <i class="fa fa-shopping-cart ml-2"></i>
                                             </button>
                                         </div>
-                                        <div class="col-12 col-lg-auto">
-                                            <button class="btn btn-gray btn-block mb-2">
-                                                Wishlist
-                                                <i class="fa fa-heart ml-2"></i>
-                                            </button>
-
-                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row mt-5">
-                            <div class="col-lg-12 col-md-12">                              
                             </div>
                         </div>
                     </div>
                 </form>              
             </section>
-            <section class="gray section">
+            <div class="container">
+                <div class="row mt-5" style="margin-bottom: 2rem;">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="custom-tab style-1">
+                            <p>
+                                <button class="btn btn-primary" type="button" style="background-color: #f96825">
+                                    Tổng quan sản phẩm
+                                </button>
+                            </p>
+                            <div style="min-height: 120px;">
+                                <div class="width">
+                                    <div class="card card-body">
+                                        Thiết kế tinh xảo, đậm tính thời trang
+                                        Laptop MSI Modern luôn thu hút mọi ánh nhìn xung quanh với vóc dáng sang chảnh, thời thượng cùng chiếc áo xám hiện đại và những đường bo nét vuông vức, tinh tế, toát lên một khí thế sang trọng cho chủ nhân sở hữu nó dù ở bất kỳ không gian nào. Nắp lưng và chiếu nghỉ tay bằng kim loại bền bỉ, cứng cáp nhưng chỉ có trọng lượng 1.6 kg và độ dày 18.9 mm, cho phép người dùng linh hoạt di chuyển đến mọi nơi.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<section class="gray section">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 mb-2">
-                            <h4 class="mb-0">Related Products</h4>
+                            <h4 class="mb-0" style="color: #f96825">Related Products</h4>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12 col-md-12">
-                            <c:forEach items="${productList}" var="product">
+                        <c:forEach items="${productList}" var="product">
+                            <div class="col-lg-12 col-md-12">
                                 <div class="owl-carousel products-slider owl-theme owl-loaded owl-drag">
                                     <div class="owl-stage-outer">
                                         <div class="owl-stage"
@@ -245,7 +244,7 @@
                         </div>
                     </div>
                 </div>
-            </section>     
+            </section>--> 
         </div>
         <%@include file="./inc/footer.jsp" %>
     </body>

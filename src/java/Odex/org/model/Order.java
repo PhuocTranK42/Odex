@@ -15,22 +15,33 @@ public class Order {
     private String code;
     private String status;
     private int userId;
+    public String currentDateTime;
     
     public static Order find(int id){
         return DatabaseDao.getInstance().getOrderDao().find(id);
     }
+    
+    public String getCurrentDateTime() {
+        return currentDateTime;
+    }
 
-    public Order(String code, String status, int userId) {
+    public void setCurrentDateTime(String currentDateTime) {
+        this.currentDateTime = currentDateTime;
+    }
+
+    public Order(String code, String status, int userId, String currentDateTime) {
         this.code = code;
         this.status = status;
         this.userId = userId;
+        this.currentDateTime = currentDateTime;
     }
 
-    public Order(int id, String code, String status, int userId) {
+    public Order(int id, String code, String status, int userId, String currentDateTime) {
         this.id = id;
         this.code = code;
         this.status = status;
         this.userId = userId;
+        this.currentDateTime = currentDateTime;
     }
 
     public int getId() {

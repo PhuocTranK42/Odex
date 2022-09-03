@@ -410,7 +410,7 @@
                                 <c:forEach items="${productList}" var="product">
                                     <div class="col-lg-4 col-md-4 col-sm-6">
                                         <div class="item">
-                                            <div class="woo_product_grid">
+                                            <div class="woo_product_grid" style="height: 302px">
                                                 <span class="woo_pr_tag hot">Hot</span>
                                                 <div class="woo_product_thumb">
                                                     <img src="${product.img}" class="img-fluid" alt="">

@@ -19,6 +19,7 @@ public interface OrderDao {
     public List<Order> all();
     public Order find(int id);
     public Order findByCode(String code);
+    public List<Order> findByStatus(String status);
     
     public int countOrder();
     public int countPendingOrder();

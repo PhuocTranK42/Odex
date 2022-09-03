@@ -11,12 +11,14 @@ import Odex.org.entity.OrderDetailSession;
 import Odex.org.model.Order;
 import Odex.org.model.OrderDetail;
 import Odex.org.model.User;
+import Odex.org.util.GetDateTime;
 import Odex.org.util.StringHelper;
 import java.io.IOException;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 /**
@@ -36,14 +38,17 @@ public class CheckoutServlet extends BaseServlet {
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {        
+            throws ServletException, IOException { 
+        DateTimeFormatter format = DateTimeFormatter
+            .ofPattern("YYYY-MM-dd");
         if(isLogged(request, response)){
             HttpSession session = request.getSession();
         
             User user = (User) session.getAttribute("user");
             OrderDao orderDao = DatabaseDao.getInstance().getOrderDao();
             String code = StringHelper.randomString(8);
-            Order order = new Order(code, "pending", user.getId());
+            String currentDateTime = GetDateTime.now.format(format);
+            Order order = new Order(code, "pending", user.getId(), currentDateTime);
             orderDao.insert(order);
 
             order = orderDao.findByCode(code);
