@@ -412,11 +412,11 @@
                                         <div class="item">
                                             <div class="woo_product_grid" style="height: 302px">
                                                 <span class="woo_pr_tag hot">Hot</span>
-                                                <div class="woo_product_thumb">
+                                                <div class="woo_product_thumb" style="width: 100%; height: 140px;">
                                                     <img src="${product.img}" class="img-fluid" alt="">
                                                 </div>
                                                 <div class="woo_product_caption.center products_center">
-                                                    <div class="woo_rate">
+                                                    <div class="woo_rate" style="margin-top: 2rem;">
                                                         <i class="fa fa-star filled"></i>
                                                         <i class="fa fa-star filled"></i>
                                                         <i class="fa fa-star filled"></i>

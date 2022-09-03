@@ -1,5 +1,4 @@
-<%@page import="Odex.org.model.User"%>
-<%@page import="Odex.org.model.Order"%>
+<%@page import="Odex.org.model.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>

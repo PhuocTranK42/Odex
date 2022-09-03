@@ -150,23 +150,49 @@
                 </form>              
             </section>
             <div class="container">
-                <div class="row mt-5" style="margin-bottom: 2rem;">
+                <div class="row mt-5">
                     <div class="col-lg-12 col-md-12">
                         <div class="custom-tab style-1">
-                            <p>
-                                <button class="btn btn-primary" type="button" style="background-color: #f96825">
-                                    Tổng quan sản phẩm
-                                </button>
-                            </p>
-                            <div style="min-height: 120px;">
-                                <div class="width">
-                                    <div class="card card-body">
-                                        Thiết kế tinh xảo, đậm tính thời trang
-                                        Laptop MSI Modern luôn thu hút mọi ánh nhìn xung quanh với vóc dáng sang chảnh, thời thượng cùng chiếc áo xám hiện đại và những đường bo nét vuông vức, tinh tế, toát lên một khí thế sang trọng cho chủ nhân sở hữu nó dù ở bất kỳ không gian nào. Nắp lưng và chiếu nghỉ tay bằng kim loại bền bỉ, cứng cáp nhưng chỉ có trọng lượng 1.6 kg và độ dày 18.9 mm, cho phép người dùng linh hoạt di chuyển đến mọi nơi.
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true" aria-expanded="true">Description</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="information-tab" data-toggle="tab" href="#information" role="tab" aria-controls="information" aria-selected="false" aria-expanded="false">Additional Information</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent" style="margin-top: 1rem;">
+                                <div class="tab-pane fade active show" id="description" role="tabpanel" aria-labelledby="description-tab" aria-expanded="true">
+                                    <p>
+                                        MSI Modern 15 A5M gây ấn tượng với người dùng bởi phong cách thiết kế thời trang, thanh lịch cùng những thông số kỹ thuật ấn tượng nhưng lại sở hữu mức giá vô cùng hợp lý, sẽ là một sự lựa chọn đúng đắn đáp ứng mọi nhu cầu học tập – văn phòng đa dạng.
+                                    </p>
+                                    <img src="./public/images/homepage/msi-modern-15-a5m-r5-236vn-2.jpg" alt="alt"/>
+                                    <p>
+                                        Cấu hình ổn định cân được nhiều tác vụ
+                                        <br>
+                                        Mang trên mình con chip AMD Ryzen 5 5500U có cấu trúc 6 nhân 12 luồng đạt tốc độ xung nhịp cơ bản 2.1 GHz và ép xung tối đa lên đến 4.0 GHz Turbo Boost cho khả năng vận hành mọi tác vụ nhanh chóng từ làm việc, học tập trên các ứng dụng của Office như Word, Excel, Powerpoint,… đến các nhu cầu giải trí cơ bản như lướt web, nghe nhạc, xem phim, chơi game,…
+                                        <br>
+                                        Hiệu suất đồ họa được cải thiện vượt bật mang đến một trải nghiệm trọn vẹn hơn trong mọi khía cạnh công việc nhờ card đồ họa tích hợp AMD Radeon Graphics, thỏa sức sáng tạo của người dùng với hình ảnh được kết xuất 2D rõ nét, các thao tác chỉnh sửa, cắt ghép video trên phần mềm Adobe trở nên chuyên nghiệp hơn hay chiến các tựa game có mức đồ họa nhẹ như Among Us,…
+                                        <br>
+                                        Nâng cao năng suất làm việc khi bạn có thể mở hàng loạt cửa sổ trình duyệt cùng lúc mà không có tình trạng giật lag, vừa chỉnh sửa các layer hình ảnh vừa nghe nhạc trên Youtube thư giãn một cách trơn tru nhờ bộ nhớ RAM 8 GB chuẩn DDR4 2 khe (1 khe 8 GB + 1 khe rời) có tốc độ Bus RAM 3200 MHz, đồng thời còn hỗ trợ nâng cấp RAM 64 GB phục vụ toàn vẹn hơn cho nhu cầu sử dụng của người dùng..
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="information" role="tabpanel" aria-labelledby="information-tab" aria-expanded="false">
+                                    <p>MSI Modern 15 A5M gây ấn tượng với người dùng bởi phong cách thiết kế thời trang, thanh lịch cùng những thông số kỹ thuật ấn tượng nhưng lại sở hữu mức giá vô cùng hợp lý, sẽ là một sự lựa chọn đúng đắn đáp ứng mọi nhu cầu học tập – văn phòng đa dạng.</p>
+                                    <div class="product_meta">
+                                        <span class="sku_wrapper">CPU: <span class="sku">Ryzen 5-5500U</span></span>
+                                        <span class="posted_in">RAM: <span class="sku">8 GBDDR4 2 khe (1 khe 8GB + 1 khe rời)3200 MHz</span></span>
+                                        <span class="posted_in">Ổ cứng: <span class="sku">8 GBDDR4 2 khe (1 khe 8GB + 1 khe rời)3200 MHz</span></span>
+                                        <span class="posted_in">Card đồ hoạ: <span class="sku">Card tích hợpRadeon</span></span>
+                                        <span class="posted_in">Màn hình: <span class="sku">15.6"Full HD (1920 x 1080)</span></span>
+                                        <span class="posted_in">Cổng giao tiếp: <span class="sku">3 x USB 3.2HDMIJack tai nghe 3.5 mmUSB Type-C</span></span>
+                                        <span class="posted_in">Pin: <span class="sku">3-cell Li-Po, 52Wh</span></span>
+                                        <span class="posted_in">Kích thước: <span class="sku">Dài 356.8 mm - Rộng 233.7 mm - Dày 18.9 mm</span></span>
+                                        <span class="posted_in">Trọng lượng: <span class="sku">1.6 kg</span></span>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>	
                     </div>
                 </div>
             </div>
@@ -178,73 +204,73 @@
                         </div>
                     </div>
                     <div class="row">
-                        <c:forEach items="${productList}" var="product">
-                            <div class="col-lg-12 col-md-12">
-                                <div class="owl-carousel products-slider owl-theme owl-loaded owl-drag">
-                                    <div class="owl-stage-outer">
-                                        <div class="owl-stage"
-                                             style="transform: translate3d(0px, 0px, 0px);transition: all 0s ease 0s;width: 2360px;">
-                                            <div class="owl-item active" style="width: 285px; margin-right: 10px;">
-                                                <div class="item">
-                                                    <div class="woo_product_grid">
-                                                        <span class="woo_pr_tag hot">
-                                                            Hot
-                                                        </span>
-                                                        <div class="woo_product_thumb">
-                                                            <img src="${product.img}" class="img-fluid" alt="">
-                                                        </div>
-                                                        <div class="woo_product_caption center">
-                                                            <div class="woo_rate">
-                                                                <i class="fa fa-star filled"></i>
-                                                                <i class="fa fa-star filled"></i>
-                                                                <i class="fa fa-star filled"></i>
-                                                                <i class="fa fa-star filled"></i>
-                                                                <i class="fa fa-star"></i>
-                                                            </div>
-                                                            <div class="woo_title">
-                                                                <h4 class="woo_pro_title">
-                                                                    <a href="#">${product.name}</a>
-                                                                </h4>
-                                                            </div>
-                                                            <div class="woo_price">
-                                                                <h6>
-                                                                    ${product.price}
-                                                                    <span class="less_price">$112.10</span>
-                                                                </h6>
-                                                            </div>
-                                                            <div class="about__item-content">
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="ProductDetailServlet?productId=${product.id}" class="woo_cart_btn btn_cart">
-                                                                            <i class="fa fa-eye"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#" class="woo_cart_btn btn_view"
-                                                                           style="background: #ffd8d0; color: #ff765a;">
-                                                                            <i class="fa fa-shopping-cart"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#" class="woo_cart_btn btn_save"
-                                                                           style="background: #c4ecff; color: #03A9F5;">
-                                                                            <i class="fa fa-heart"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+            <c:forEach items="${productList}" var="product">
+                <div class="col-lg-12 col-md-12">
+                    <div class="owl-carousel products-slider owl-theme owl-loaded owl-drag">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage"
+                                 style="transform: translate3d(0px, 0px, 0px);transition: all 0s ease 0s;width: 2360px;">
+                                <div class="owl-item active" style="width: 285px; margin-right: 10px;">
+                                    <div class="item">
+                                        <div class="woo_product_grid">
+                                            <span class="woo_pr_tag hot">
+                                                Hot
+                                            </span>
+                                            <div class="woo_product_thumb">
+                                                <img src="${product.img}" class="img-fluid" alt="">
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </c:forEach>
-                        </div>
-                    </div>
-                </div>
-            </section>--> 
+                                            <div class="woo_product_caption center">
+                                                <div class="woo_rate">
+                                                    <i class="fa fa-star filled"></i>
+                                                    <i class="fa fa-star filled"></i>
+                                                    <i class="fa fa-star filled"></i>
+                                                    <i class="fa fa-star filled"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div class="woo_title">
+                                                    <h4 class="woo_pro_title">
+                                                        <a href="#">${product.name}</a>
+                                                    </h4>
+                                                </div>
+                                                <div class="woo_price">
+                                                    <h6>
+                ${product.price}
+                <span class="less_price">$112.10</span>
+            </h6>
+        </div>
+        <div class="about__item-content">
+            <ul>
+                <li>
+                    <a href="ProductDetailServlet?productId=${product.id}" class="woo_cart_btn btn_cart">
+                        <i class="fa fa-eye"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="woo_cart_btn btn_view"
+                       style="background: #ffd8d0; color: #ff765a;">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="woo_cart_btn btn_save"
+                       style="background: #c4ecff; color: #03A9F5;">
+                        <i class="fa fa-heart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+            </c:forEach>
+        </div>
+    </div>
+</div>
+</section>--> 
         </div>
         <%@include file="./inc/footer.jsp" %>
     </body>

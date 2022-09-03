@@ -49,12 +49,13 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public boolean update(User user) {
-        String sql = "UPDATE users SET email=?, password=?, role=?";
+        String sql = "UPDATE users SET email=?, password=?, role=? WHERE id=?";
         try {
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, user.getEmail());
             stmt.setString(2, user.getPassword());
             stmt.setString(3, user.getRole());
+            stmt.setInt(4, user.getId());
             stmt.execute();
         } catch (SQLException ex) {
             Logger.getLogger(UserDaoImpl.class.getName()).log(Level.SEVERE, null, ex);

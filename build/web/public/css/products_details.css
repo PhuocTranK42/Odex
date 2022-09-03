@@ -44,8 +44,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     color: #ffffff !important;
 }
 
+.custom-tab .nav-tabs .nav-item a {
+    border: none;
+    background: #eff2f7;
+    border-radius: 3px;
+    text-align: center;
+    padding: 0.8em 2em;
+}
+
 .section {
-    padding: 80px 0 80px;
+    padding: 80px 0 20px;
     position: relative;
 }
 

@@ -30,9 +30,9 @@ public class OrderDetailDaoImpl implements OrderDetailDao {
         String sql = "INSERT INTO orders_details VALUES(NULL, ?, ?, ?)";
         try {
             PreparedStatement stmt = conn.prepareStatement(sql);
-            stmt.setInt(1, orderDetail.getQuantity());
+            stmt.setInt(1, orderDetail.getOrderId());
             stmt.setInt(2, orderDetail.getProductId());
-            stmt.setInt(3, orderDetail.getOrderId());
+            stmt.setInt(3, orderDetail.getQuantity());
             stmt.execute();
         } catch (SQLException ex) {
             Logger.getLogger(OrderDetailDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
@@ -46,9 +46,9 @@ public class OrderDetailDaoImpl implements OrderDetailDao {
         String sql = "UPDATE orders_details SET quantity=?, productId =?, orderId =?";
         try {
             PreparedStatement stmt = conn.prepareStatement(sql);
-            stmt.setInt(1, orderDetail.getQuantity());
-            stmt.setInt(2, orderDetail.getProductId());
-            stmt.setInt(3, orderDetail.getOrderId());
+            stmt.setInt(1, orderDetail.getProductId());
+            stmt.setInt(2, orderDetail.getOrderId());
+            stmt.setInt(3, orderDetail.getQuantity());
             stmt.execute();
         } catch (SQLException ex) {
             Logger.getLogger(OrderDetailDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
@@ -80,11 +80,11 @@ public class OrderDetailDaoImpl implements OrderDetailDao {
             ResultSet rs = stm.executeQuery(sql);
             while(rs.next()){
                 int id = rs.getInt("id");
-                int quantity = rs.getInt("quantity");
                 int productId = rs.getInt("productId");
                 int orderId = rs.getInt("orderId");
+                int quantity = rs.getInt("quantity");
                 
-                orderDetailList.add(new OrderDetail(id, quantity, productId, orderId));
+                orderDetailList.add(new OrderDetail(id,orderId, productId,  quantity));
             }
         } catch (SQLException ex) {
             Logger.getLogger(OrderDetailDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
@@ -100,11 +100,11 @@ public class OrderDetailDaoImpl implements OrderDetailDao {
             stmt.setInt(1, id);
             ResultSet rs = stmt.executeQuery();
             while(rs.next()){
-                int quantity = rs.getInt("quantity");
                 int productId = rs.getInt("productId");
                 int orderId = rs.getInt("orderId");
+                int quantity = rs.getInt("quantity");
                 
-                return new OrderDetail(id, quantity, productId, orderId);
+                return new OrderDetail(id, productId, orderId, quantity);
             }
         } catch (SQLException ex) {
             Logger.getLogger(OrderDetailDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
@@ -122,10 +122,10 @@ public class OrderDetailDaoImpl implements OrderDetailDao {
             ResultSet rs = stmt.executeQuery();
             while(rs.next()){
                 int id = rs.getInt("id");
-                int quantity = rs.getInt("quantity");
                 int productId = rs.getInt("productId");
+                int quantity = rs.getInt("quantity");
                 
-                orderDetailList.add(new OrderDetail(id, quantity, productId, orderId));
+                orderDetailList.add(new OrderDetail(id, productId, orderId, quantity));
             }
         } catch (SQLException ex) {
             Logger.getLogger(OrderDetailDaoImpl.class.getName()).log(Level.SEVERE, null, ex);

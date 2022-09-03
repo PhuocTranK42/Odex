@@ -1,6 +1,4 @@
-<%@page import="Odex.org.model.Product"%>
-<%@page import="Odex.org.model.Order"%>
-<%@page import="Odex.org.model.OrderDetail"%>
+<%@page import="Odex.org.model.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
@@ -58,8 +56,8 @@
                                                     <%= Order.find(orderDetail.getOrderId()).getCode() %>
                                                 </td>
                                                 <td>
-                                                    <a href='ProductDetailServlet?productId=<%= Product.find(orderDetail.getOrderId()).getId() %>' target="_blank">
-                                                        <%= Product.find(orderDetail.getOrderId()).getName() %>
+                                                    <a href='ProductDetailServlet?productId=<%= Product.find(orderDetail.getProductId()).getId() %>' target="_blank">
+                                                        <%= Product.find(orderDetail.getProductId()).getName() %>
                                                     </a>
                                                 </td>
                                                 <td>

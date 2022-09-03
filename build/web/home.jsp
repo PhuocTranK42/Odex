@@ -111,18 +111,6 @@
                                                     <i class="fa fa-eye"></i>
                                                 </a>
                                             </li>
-                                            <li>
-                                                <a href="#" class="woo_cart_btn btn_view"
-                                                   style="background: #ffd8d0; color: #ff765a;">
-                                                    <i class="fa fa-shopping-cart"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="woo_cart_btn btn_save"
-                                                   style="background: #c4ecff; color: #03A9F5;">
-                                                    <i class="fa fa-heart"></i>
-                                                </a>
-                                            </li>
                                         </ul>
                                     </div>
                                 </div>

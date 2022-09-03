@@ -14,13 +14,13 @@ public class OrderDetail {
     private int productId;
     private int orderId;
 
-    public OrderDetail(int quantity, int productId, int orderId) {
+    public OrderDetail(int orderId, int productId, int quantity) {
         this.quantity = quantity;
         this.productId = productId;
         this.orderId = orderId;
     }
 
-    public OrderDetail(int id, int quantity, int productId, int orderId) {
+    public OrderDetail(int id, int orderId, int productId, int quantity) {
         this.id = id;
         this.quantity = quantity;
         this.productId = productId;

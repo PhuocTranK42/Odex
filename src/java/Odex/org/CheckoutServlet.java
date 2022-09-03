@@ -58,7 +58,7 @@ public class CheckoutServlet extends BaseServlet {
             if(session.getAttribute("cart") != null){
                 List<OrderDetailSession> orderDetailSessionList = (List<OrderDetailSession>) session.getAttribute("cart");
                 for (OrderDetailSession orderDetailSession : orderDetailSessionList) {
-                    OrderDetail orderDetail = new OrderDetail(orderDetailSession.getQuantity(), orderDetailSession.getProductId(), order.getId());
+                    OrderDetail orderDetail = new OrderDetail(order.getId(),orderDetailSession.getProductId(),orderDetailSession.getQuantity() );
                     orderDetailDao.insert(orderDetail);
                 }
 
