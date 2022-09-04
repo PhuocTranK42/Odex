@@ -3,7 +3,7 @@
     Created on : Aug 11, 2022, 12:35:34 PM
     Author     : Admin
 --%>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -322,24 +322,26 @@
                                         <h4 style="color: #555;">Thông tin đơn hàng</h4>
                                     </li>
                                     <li class="list-group-item d-flex">
+                                    <c:set var="total" value="0"></c:set>
                                     <c:forEach items="${cart}" var="orderDetailSession">
                                         <div class="product_title">
                                             <h5 class="tbl_pr_title">${orderDetailSession.name}</h5>
                                             <p class="tbl_pr_quality">${orderDetailSession.price}</p><p class="tbl_quan">${orderDetailSession.quantity}</p>
                                         </div>
+                                        <c:set var="total" value="${total+(orderDetailSession.price * orderDetailSession.quantity)}"></c:set>
                                     </c:forEach>
                                     </li>
                                     <li class="list-group-item d-flex">
                                         <p style="color: #555;">Thuế: </p>
-                                        <span class="ml-auto font-size-sm" style="color: #555;">$89.00</span>
+                                        <span class="ml-auto font-size-sm" style="color: #555;">0.00</span>
                                     </li>
                                     <li class="list-group-item d-flex">
                                         <p style="color: #555;">Phí giao hàng: </p>
-                                        <span class="ml-auto font-size-sm" style="color: #555;">$89.00</span>
+                                        <span class="ml-auto font-size-sm" style="color: #555;">35000.00</span>
                                     </li>
                                     <li class="list-group-item d-flex">
                                         <p style="color: #555;"><b>Tổng: </b></p>
-                                        <span class="ml-auto font-size-sm" style="color: #555;">$89.00</span>
+                                        <span class="ml-auto font-size-sm" style="color: #555;">${total}</span>
                                     </li>
                                 </ul>
                             </div>

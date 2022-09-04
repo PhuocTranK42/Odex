@@ -60,10 +60,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     position: relative;
 }
 
-.mb-5 {
-    margin-bottom: 3rem !important;
-}
-
 .rounded {
     border-radius: 0.25rem !important;
 }

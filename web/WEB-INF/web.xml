@@ -120,6 +120,10 @@
         <servlet-name>HeaderServlet</servlet-name>
         <servlet-class>Odex.org.HeaderServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>PayServlet</servlet-name>
+        <servlet-class>Odex.org.PayServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeServlet</servlet-name>
         <url-pattern>/HomeServlet</url-pattern>
@@ -239,6 +243,10 @@
     <servlet-mapping>
         <servlet-name>HeaderServlet</servlet-name>
         <url-pattern>/HeaderServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PayServlet</servlet-name>
+        <url-pattern>/PayServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

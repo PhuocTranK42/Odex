@@ -167,4 +167,31 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     border-radius: 4px;
 }
 
+.cart_detail_box {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.cart_detail_box .card-body {
+    border: none;
+    border-bottom: 0;
+}
+
+.list-group-flush-y .list-group-item:first-child {
+    padding-top: 0;
+    border-top: none;
+}
+
+.list-group-flush-x .list-group-item {
+    padding-left: 0;
+    padding-right: 0;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+}
+
+.list-group-sm .list-group-item {
+    padding: 1.25rem 1.25rem;
+}
+
 

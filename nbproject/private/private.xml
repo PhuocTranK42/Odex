@@ -5,21 +5,18 @@
         <group>
             <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/product_detail.jsp</file>
             <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/model/Order.java</file>
-            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/loginpage.jsp</file>
-            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/public/css/categorypage.css</file>
-            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/checkout.jsp</file>
-            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/admin/order/EditOrderServlet.java</file>
-            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/registerpage.jsp</file>
-            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/admin/order/IndexOrderServlet.java</file>
-            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/public/css/style.css</file>
-            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/cart.jsp</file>
-            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/inc/header.jsp</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/impl/ProductDaoImpl.java</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/admin/orderDetail/IndexOrderDetailServlet.java</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/impl/OrderDetailDaoImpl.java</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/public/css/products_details.css</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/admin/orders/index.jsp</file>
             <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/CheckoutServlet.java</file>
-            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/dao/OrderDao.java</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/admin/orders_details/index.jsp</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/HomeServlet.java</file>
             <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/impl/OrderDaoImpl.java</file>
             <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/home.jsp</file>
             <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/impl/UserDaoImpl.java</file>
-            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/web/category.jsp</file>
+            <file>file:/D:/CN%20Lap%20trinh%20web%20java/Odex/src/java/Odex/org/model/OrderDetail.java</file>
         </group>
     </open-files>
 </project-private>

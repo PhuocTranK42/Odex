@@ -110,9 +110,6 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="cart_subtotal">
-                                <h6>Tổng đơn hàng<span class="theme-cl">${total}</span></h6>
-                            </div>
                             <div class="row align-items-end justify-content-between mb-10 mb-md-0">
                                 <div class="col-12 col-md-7">
                                     <form action="" class="mb-7 mb-md-0">
@@ -138,7 +135,24 @@
                         </div>
                         <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                             <!-- comment -->
+                            <div class="cart_detail_box mb-4" style="
+                                 background: #fff;">
+                                <div class="card-body">
+                                    <ul class="list-group list-group-sm list-group-flush-y list-group-flush-x">
+                                        <li class="list-group-item d-flex">
+                                            <h5 class="mb-0" style="color: #2D3954;">Tổng đơn hàng</h5>
+                                        </li>
+                                        <li class="list-group-item d-flex">
+                                            <span style="color: #5B687B;">Thuế</span> <span style="color: #5B687B;" class="ml-auto font-size-sm">0.00</span>
+                                        </li>
+                                        <li class="list-group-item d-flex font-size-lg font-weight-bold">
+                                            <span style="color: #5B687B;">Total</span> <span style="color: #5B687B;" class="ml-auto font-size-sm">${total}</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                             <a class="btn btn-block btn-dark mb-2" href="CheckoutServlet">Tiến hành thanh toán</a>
+                            <a class="px-0 text-body" href="HomeServlet"><i class="fa fa-undo mr-2"></i> Continue Shopping</a>
                         </div>
                     </div>
                 </div>
