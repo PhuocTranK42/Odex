@@ -21,8 +21,8 @@
                 integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./public/css/style.css">
-        <link rel="stylesheet" href="./public/css/categorypage.css">
+        <link rel="stylesheet" href="public/css/style.css">
+        <link rel="stylesheet" href="public/css/categorypage.css">
         <title>Category - Odex</title>
     </head>
     <body>
@@ -302,7 +302,7 @@
                             <!-- Banner -->
                             <div class="row">
                                 <div class="mb-5">
-                                    <img src="./public/images/banner-1.png" class="img-fluid rounded" alt="">
+                                    <img src="./public/images/homepage/banner-7.png" class="img-fluid rounded" alt="">
                                 </div>
                             </div>
                             <div class="row">
@@ -319,9 +319,6 @@
                                                 <i class="fa fa-arrow-up"></i>
                                             </a>
                                         </div>
-
-
-
                                         <div class="field.limiter">
                                             <label for="limiter" class="label">
                                                 <span>Show</span>
@@ -365,7 +362,7 @@
                                                     <div class="woo_price products_center">
                                                         <h6>
                                                             ${product.price}
-                                                            <span class="less_price">$112.10</span>
+                                                            <span class="less_price">14999000.00</span>
                                                         </h6>
                                                     </div>
                                                     <div class="about__item-content">

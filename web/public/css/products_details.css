@@ -46,10 +46,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 
 .custom-tab .nav-tabs .nav-item a {
     border: none;
-    background: #eff2f7;
+    background: #f96825;
     border-radius: 3px;
     text-align: center;
     padding: 0.8em 2em;
+    color: white;
 }
 
 .section {
@@ -505,6 +506,6 @@ span.org_price {
     display: block;
     margin: 10px 0;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 19px;
 }
 

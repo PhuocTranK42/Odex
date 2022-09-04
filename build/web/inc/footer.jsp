@@ -53,13 +53,13 @@
                         <div class="address_infos">
                             <ul style="padding: 0;">
                                 <li>
-                                    <a href="CategoryServlet?categoriesId=1">Máy tính xách tay</a>
+                                    <a href="./CategoryServlet?id=1">Máy tính xách tay</a>
                                 </li>
                                 <li>
-                                    <a href="CategoryServlet?categoriesId=2">Điện thoại</a>
+                                    <a href="./CategoryServlet?id=2">Điện thoại</a>
                                 </li>
                                 <li>
-                                    <a href="CategoryServlet?categoriesId=1">Phụ kiện công nghệ</a>
+                                    <a href="./CategoryServlet?id=3">Phụ kiện công nghệ</a>
                                 </li>
                             </ul>
                         </div>

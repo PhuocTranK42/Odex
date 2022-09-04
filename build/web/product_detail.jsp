@@ -75,7 +75,7 @@
                                 <div class="sp-wrap sp-non-touch" items="${productList}" var="product">
                                     <div class="sp-large">
                                         <a href="#">
-                                            <img src="${product.img}" class="sp-current-big" alt="">
+                                            <img src="${product.img}" class="sp-current-big" style="width: 100%;" alt="">
                                         </a>
                                     </div>
                                     <!--<div class="sp-thumbs sp-tb-active">
@@ -152,12 +152,12 @@
             <div class="container">
                 <div class="row mt-5">
                     <div class="col-lg-12 col-md-12">
-                        <div class="custom-tab style-1">
+                        <div class="custom-tab style-1" style="margin-bottom: 3rem;">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item">
+                                <li class="nav-item" style="padding: 5px;">
                                     <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true" aria-expanded="true">Mô tả</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item" style="padding: 5px;">
                                     <a class="nav-link" id="information-tab" data-toggle="tab" href="#information" role="tab" aria-controls="information" aria-selected="false" aria-expanded="false">Thông số kỹ thuật</a>
                                 </li>
                             </ul>
@@ -167,14 +167,19 @@
                                         MSI Modern 15 A5M gây ấn tượng với người dùng bởi phong cách thiết kế thời trang, thanh lịch cùng những thông số kỹ thuật ấn tượng nhưng lại sở hữu mức giá vô cùng hợp lý, sẽ là một sự lựa chọn đúng đắn đáp ứng mọi nhu cầu học tập – văn phòng đa dạng.
                                     </p>
                                     <img src="./public/images/homepage/msi-modern-15-a5m-r5-236vn-2.jpg" alt="alt"/>
-                                    <p>
+                                    <p style="margin-bottom: 3rem;">
+                                        <br>
                                         Cấu hình ổn định cân được nhiều tác vụ
+                                        </br>
                                         <br>
                                         Mang trên mình con chip AMD Ryzen 5 5500U có cấu trúc 6 nhân 12 luồng đạt tốc độ xung nhịp cơ bản 2.1 GHz và ép xung tối đa lên đến 4.0 GHz Turbo Boost cho khả năng vận hành mọi tác vụ nhanh chóng từ làm việc, học tập trên các ứng dụng của Office như Word, Excel, Powerpoint,… đến các nhu cầu giải trí cơ bản như lướt web, nghe nhạc, xem phim, chơi game,…
+                                        </br>
                                         <br>
                                         Hiệu suất đồ họa được cải thiện vượt bật mang đến một trải nghiệm trọn vẹn hơn trong mọi khía cạnh công việc nhờ card đồ họa tích hợp AMD Radeon Graphics, thỏa sức sáng tạo của người dùng với hình ảnh được kết xuất 2D rõ nét, các thao tác chỉnh sửa, cắt ghép video trên phần mềm Adobe trở nên chuyên nghiệp hơn hay chiến các tựa game có mức đồ họa nhẹ như Among Us,…
+                                        </br>
                                         <br>
-                                        Nâng cao năng suất làm việc khi bạn có thể mở hàng loạt cửa sổ trình duyệt cùng lúc mà không có tình trạng giật lag, vừa chỉnh sửa các layer hình ảnh vừa nghe nhạc trên Youtube thư giãn một cách trơn tru nhờ bộ nhớ RAM 8 GB chuẩn DDR4 2 khe (1 khe 8 GB + 1 khe rời) có tốc độ Bus RAM 3200 MHz, đồng thời còn hỗ trợ nâng cấp RAM 64 GB phục vụ toàn vẹn hơn cho nhu cầu sử dụng của người dùng..
+                                        Nâng cao năng suất làm việc khi bạn có thể mở hàng loạt cửa sổ trình duyệt cùng lúc mà không có tình trạng giật lag, vừa chỉnh sửa các layer hình ảnh vừa nghe nhạc trên Youtube thư giãn một cách trơn tru nhờ bộ nhớ RAM 8 GB chuẩn DDR4 2 khe (1 khe 8 GB + 1 khe rời) có tốc độ Bus RAM 3200 MHz, đồng thời còn hỗ trợ nâng cấp RAM 64 GB phục vụ toàn vẹn hơn cho nhu cầu sử dụng của người dùng.
+                                        </br>
                                     </p>
                                 </div>
                                 <div class="tab-pane fade" id="information" role="tabpanel" aria-labelledby="information-tab" aria-expanded="false">

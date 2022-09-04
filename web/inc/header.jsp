@@ -103,7 +103,6 @@
                 <div class="cart_action">
                     <ul>
                         <li><a href="CartServlet" class="btn btn-go-cart btn-theme">View/Edit Cart</a></li>
-                        <li><a href="CheckoutServlet" class="btn btn-checkout">Checkout Now</a></li>
                     </ul>
                 </div>
             </div>

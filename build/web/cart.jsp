@@ -23,8 +23,8 @@
         <link rel="stylesheet" href="./public/css/style_category.css">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-        <link rel="stylesheet" href="./public/css/cart.css">
-        <link rel="stylesheet" href="./public/css/style.css">
+        <link rel="stylesheet" href="public/css/cart.css">
+        <link rel="stylesheet" href="public/css/style.css">
         <title>Cart - Odex</title>
     </head>
     <body>
@@ -147,6 +147,9 @@
                                         </li>
                                         <li class="list-group-item d-flex font-size-lg font-weight-bold">
                                             <span style="color: #5B687B;">Total</span> <span style="color: #5B687B;" class="ml-auto font-size-sm">${total}</span>
+                                        </li>
+                                        <li class="list-group-item d-flex font-size-lg font-weight-bold">
+                                            <span style="color: #5B687B;">Đơn hàng này được miễn phí vận chuyển</span>
                                         </li>
                                     </ul>
                                 </div>
